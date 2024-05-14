@@ -44,11 +44,12 @@ public interface ThingMapper {
     void removeThing(Long id);
 
     @Delete("delete from things where userid = #{userId} and status = 0")
-    void removeThingTodoAll(Long userId);
+    int removeThingTodoAll(Long userId);
 
     @Delete("delete from things where userid = #{userId} and status = 1")
-    void removeThingDoneAll(Long userId);
+    int removeThingDoneAll(Long userId);
 
     @Delete("delete from things where userid = #{userId}")
-    void removeThingAll(Long userId);
+    int removeThingAll(Long userId);
+
 }

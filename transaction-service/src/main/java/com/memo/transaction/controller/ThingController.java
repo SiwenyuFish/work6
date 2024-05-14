@@ -170,6 +170,15 @@ public class ThingController {
     }
 
 
+    @ApiOperation("测试远程调用")
+    @GetMapping("/test")
+    public Result test(){
+
+
+        String username=thingService.test();
+
+        return Result.success(username);
+    }
 
 
 }

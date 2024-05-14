@@ -2,6 +2,7 @@ package com.memo.transaction.service.Impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.memo.api.client.UserClient;
 import com.memo.common.util.SnowFlakeUtil;
 import com.memo.common.util.ThreadLocalUtil;
 import com.memo.transaction.mapper.ThingMapper;
@@ -34,6 +35,9 @@ public class ThingServiceImpl implements ThingService {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    @Autowired
+    private UserClient userClient;
+
 
     private static final Logger log = LoggerFactory.getLogger(ThingService.class);
 
@@ -52,6 +56,7 @@ public class ThingServiceImpl implements ThingService {
 
         //更新数据库
         thingMapper.saveThing(id,userId,content);
+        userClient.updateUserInfo(1);
 
         //删除缓存
         try {
@@ -368,6 +373,7 @@ public class ThingServiceImpl implements ThingService {
         thingMapper.removeThing(id);
 
         Long userId =ThreadLocalUtil.get();
+        userClient.updateUserInfo(-1);
 
         //删除缓存
         try {
@@ -382,7 +388,8 @@ public class ThingServiceImpl implements ThingService {
     @Override
     public void removeThingTodoAll(Long userId) {
 
-        thingMapper.removeThingTodoAll(userId);
+        int i = thingMapper.removeThingTodoAll(userId);
+        userClient.updateUserInfo((-1)*i);
 
         //删除缓存
         try {
@@ -397,7 +404,8 @@ public class ThingServiceImpl implements ThingService {
     @Override
     public void removeThingDoneAll(Long userId) {
 
-        thingMapper.removeThingDoneAll(userId);
+        int i = thingMapper.removeThingDoneAll(userId);
+        userClient.updateUserInfo((-1)*i);
 
         //删除缓存
         try {
@@ -412,7 +420,8 @@ public class ThingServiceImpl implements ThingService {
     @Override
     public void removeThingAll(Long userId) {
 
-        thingMapper.removeThingAll(userId);
+        int i = thingMapper.removeThingAll(userId);
+        userClient.updateUserInfo((-1)*i);
 
         //删除缓存
         try {
@@ -422,5 +431,11 @@ public class ThingServiceImpl implements ThingService {
             CacheMessage cacheMessage=new CacheMessage(SnowFlakeUtil.getSnowFlakeId(),userId);
             rabbitTemplate.convertAndSend("redis.topic","redis",cacheMessage);
         }
+    }
+
+    @Override
+    public String test() {
+        Long userId = ThreadLocalUtil.get();
+        return userClient.findUsernameById(userId);
     }
 }

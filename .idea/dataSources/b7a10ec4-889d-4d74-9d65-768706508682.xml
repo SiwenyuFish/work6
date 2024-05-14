@@ -975,7 +975,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="293" parent="1" name="memo-user">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-09.05:11:40</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-14.11:33:19</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <user id="294" parent="1" name="root"/>
@@ -1016,17 +1016,23 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="302" parent="298" name="PRIMARY">
+    <column id="302" parent="298" name="count">
+      <DasType>int|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="303" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="303" parent="298" name="user_id_username_index">
+    <index id="304" parent="298" name="user_id_username_index">
       <ColNames>id
 username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="304" parent="298" name="PRIMARY">
+    <key id="305" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

@@ -9,4 +9,7 @@ public interface UserService {
 
     void register(String username, String password);
 
+    String findUsernameById(Long id);
+
+    void updateUserInfo(Long id, int count);
 }

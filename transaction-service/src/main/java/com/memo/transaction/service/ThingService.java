@@ -33,4 +33,6 @@ public interface ThingService {
     void removeThingDoneAll(Long userId);
 
     void removeThingAll(Long userId);
+
+    String test();
 }

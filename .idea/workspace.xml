@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6781f4b6-c328-4b95-807c-e48506f3376a" name="更改" comment="" />
+    <list default="true" id="6781f4b6-c328-4b95-807c-e48506f3376a" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-api/src/main/java/com/memo/api/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-api/src/main/java/com/memo/api/config/DefaultFeignConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7a10ec4-889d-4d74-9d65-768706508682.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7a10ec4-889d-4d74-9d65-768706508682.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/memo-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-gateway/src/main/java/com/memo/gateway/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/memo-gateway/src/main/java/com/memo/gateway/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/TransactionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/TransactionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/controller/ThingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/controller/ThingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/mapper/ThingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/mapper/ThingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/Impl/ThingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/Impl/ThingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/ThingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/ThingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +37,25 @@
       </list>
     </option>
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SiwenyuFish"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SiwenyuFish/work6.git",
+    "accountId": "7da49415-cb58-4d34-bcea-8c5ec350cdb2"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,10 +68,11 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2g8XkAWMOmg9ypiP6Ab8Q8Sr6WK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,6 +87,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.TransactionApplication.executor": "Run",
     "Spring Boot.UserApplication.executor": "Run",
@@ -59,6 +95,7 @@
     "Spring Boot.transactionApplication2.executor": "Run",
     "Spring Boot.transactionApplication3.executor": "Run",
     "Spring Boot.userApplication.executor": "Run",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/javaproject/demo_16/memo-common/src/main/java/com/memo/common",
@@ -72,7 +109,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true",
     "应用程序.test.executor": "Run"
   },
@@ -209,6 +246,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715080319753</updated>
       <workItem from="1715081349654" duration="93425000" />
+      <workItem from="1715578297144" duration="19576000" />
     </task>
     <servers />
   </component>

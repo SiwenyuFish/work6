@@ -3,21 +3,22 @@ package com.memo.user.controller;
 
 import com.memo.common.pojo.Result;
 import com.memo.common.util.Md5Util;
+import com.memo.common.util.ThreadLocalUtil;
 import com.memo.user.pojo.User;
 import com.memo.user.service.UserService;
 import com.memo.common.util.JwtUtil;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 import javax.validation.constraints.Pattern;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 @RestController
 @RequestMapping("/user")
 @Validated
@@ -67,5 +68,19 @@ public class UserController {
         }
         return Result.error("密码错误");
     }
+
+    @GetMapping("/{id}")
+    public String getUsername(@PathVariable("id") Long id) {
+        return userService.findUsernameById(id);
+    }
+
+    @PutMapping("/count/{count}")
+    public void updateUserInfo(@PathVariable("count") int count) {
+        Long id = ThreadLocalUtil.get();
+        userService.updateUserInfo(id,count);
+        log.info("id"+id);
+        log.info("进入远程调用");
+    }
+
 
 }

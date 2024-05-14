@@ -21,6 +21,16 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    @Override
+    public String findUsernameById(Long id){
+        return  userMapper.findUsernameById(id);
+    }
+
+
+    @Override
+    public void updateUserInfo(Long id, int count) {
+        userMapper.updateUserInfo(id,count);
+    }
 
     /**
      * 实现用户注册 将用户信息保存到数据库
