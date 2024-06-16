@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  memo-gateway:
+    container_name: memo-gateway
+    build:
+      context: ./memo-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - cnetwork
+
+
+  user-service:
+    container_name: user-service
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    networks:
+      - cnetwork
+    depends_on:
+      - memo-gateway
+
+  transaction-service1:
+    container_name: transaction-service
+    build:
+      context: ./transaction-service
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - cnetwork
+    depends_on:
+      - memo-gateway
+      - user-service
+
+  transaction-service2:
+    container_name: transaction-service2
+    build:
+      context: ./transaction-service
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    networks:
+      - cnetwork
+    depends_on:
+      - memo-gateway
+      - user-service
+
+networks:
+  cnetwork:

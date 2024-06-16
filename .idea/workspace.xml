@@ -5,24 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6781f4b6-c328-4b95-807c-e48506f3376a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-api/src/main/java/com/memo/api/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-api/src/main/java/com/memo/api/config/DefaultFeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.env.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-gateway/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-init/create_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7a10ec4-889d-4d74-9d65-768706508682.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7a10ec4-889d-4d74-9d65-768706508682.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54d8dfa2-1a37-4309-9eb1-d2352b925ba4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54d8dfa2-1a37-4309-9eb1-d2352b925ba4/storage_v2/_src_/schema/memo-transaction.y_LF7g.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/936b4cbf-bed3-4862-b209-3a62d6b27b1d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7a10ec4-889d-4d74-9d65-768706508682.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7a10ec4-889d-4d74-9d65-768706508682/storage_v2/_src_/schema/memo-user.fiwcYw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memo-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/memo-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memo-gateway/src/main/java/com/memo/gateway/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/memo-gateway/src/main/java/com/memo/gateway/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/memo-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/memo-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/TransactionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/TransactionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/controller/ThingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/controller/ThingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/mapper/ThingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/mapper/ThingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/Impl/ThingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/Impl/ThingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/ThingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/memo/transaction/service/ThingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/memo/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,24 +39,25 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SiwenyuFish"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SiwenyuFish&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SiwenyuFish/work6.git",
-    "accountId": "7da49415-cb58-4d34-bcea-8c5ec350cdb2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SiwenyuFish/work6.git&quot;,
+    &quot;accountId&quot;: &quot;7da49415-cb58-4d34-bcea-8c5ec350cdb2&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -60,10 +66,12 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\maven\repository" />
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
         <option name="userSettingsFile" value="D:\apache-maven-3.9.6-bin\apache-maven-3.9.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -77,48 +85,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.test.executor": "Run",
-    "JUnit.test.loadmytest (1).executor": "Run",
-    "JUnit.test.loadmytest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.TransactionApplication.executor": "Run",
-    "Spring Boot.UserApplication.executor": "Run",
-    "Spring Boot.transactionApplication.executor": "Run",
-    "Spring Boot.transactionApplication2.executor": "Run",
-    "Spring Boot.transactionApplication3.executor": "Run",
-    "Spring Boot.userApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/javaproject/demo_16/memo-common/src/main/java/com/memo/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/javaproject/demo_16/transaction-service/src/main/java/siwenyu/Main.java",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.test.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.env.yml.mysql: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mysql: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.transaction-service/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.user-service/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test.loadmytest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test.loadmytest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo_16 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo_16 [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.memo-common [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.memo-gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.memo-gateway [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.transaction-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TransactionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.transactionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.transactionApplication2.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.transactionApplication3.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.userApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/javaproject/demo_16&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/javaproject/demo_16/transaction-service/src/main/java/siwenyu/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.test.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -146,43 +165,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test.loadmytest (1)">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="transaction-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="transaction-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.loadmytest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="transaction-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="loadmytest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.loadmytest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="transaction-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="loadmytest([Ljava.lang.String;)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.transaction-service/Dockerfile">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="memo-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.memo.gateway.GatewayApplication" />
@@ -197,9 +180,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.memo.user.UserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.memo.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,20 +201,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transactionApplication3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="transaction-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.memo.transaction.TransactionApplication" />
-      <option name="VM_PARAMETERS" value="-Dserver.port=8084" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.env.yml.mysql: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.env.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="transaction-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="transaction-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="user-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="user-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test.loadmytest (1)" />
-        <item itemvalue="JUnit.test.loadmytest" />
-        <item itemvalue="JUnit.test" />
-        <item itemvalue="应用程序.test" />
+        <item itemvalue="Docker.transaction-service/Dockerfile" />
+        <item itemvalue="Docker.docker-compose.env.yml.mysql: Compose 部署" />
+        <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
+        <item itemvalue="Docker.user-service/Dockerfile" />
+        <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +285,18 @@
       <updated>1715080319753</updated>
       <workItem from="1715081349654" duration="93425000" />
       <workItem from="1715578297144" duration="19576000" />
+      <workItem from="1715943167632" duration="4253000" />
+      <workItem from="1716037383386" duration="19102000" />
+      <workItem from="1716104425548" duration="57756000" />
+      <workItem from="1716477274910" duration="4443000" />
+      <workItem from="1716778593408" duration="1159000" />
+      <workItem from="1717038372522" duration="85000" />
+      <workItem from="1717244104267" duration="2275000" />
+      <workItem from="1717669538056" duration="2098000" />
+      <workItem from="1718116490121" duration="353000" />
+      <workItem from="1718117268774" duration="15000" />
+      <workItem from="1718443415820" duration="18000" />
+      <workItem from="1718452570524" duration="13952000" />
     </task>
     <servers />
   </component>
