@@ -361,8 +361,8 @@ public class ThingServiceImpl implements ThingService {
         for (Thing thing : thingList) {
             redisTemplate.opsForZSet().addIfAbsent("用户" + userId + "关键词"+keyword+"事项", thing, thing.getId());
         }
-        redisTemplate.expire("用户" + userId + "关键词事项", 2, TimeUnit.SECONDS);
-        redisTemplate.opsForValue().set("用户" + userId + "关键词"+keyword+"事项记录数", thingPage.getTotal(),2, TimeUnit.SECONDS);
+        redisTemplate.expire("用户" + userId + keyword+"关键词事项", 5, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set("用户" + userId + "关键词"+keyword+"事项记录数", thingPage.getTotal(),10, TimeUnit.SECONDS);
         log.info("从mysql中获取");
         return thingPageBean;
     }

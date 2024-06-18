@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: transaction-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/memo-transaction?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+    password: 297710
+  redis:
+    host: redis
+    port: 6379
+    connect-timeout: 5000
+    password: 297710
+    database: 1
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: linbei
+    password: 297710
+    listener:
+      simple:
+        acknowledge-mode: auto
+        prefetch: 1
+        #retry机制[注意:所有重试结束，消息无论是否被成功消费，都会被MQ丢弃(最后消费端返回reject)]
+        retry:
+          enabled: true # 开启消费者失败重试
+          initial-interval: 1000 # 第一次失败等待时长
+          multiplier: 2 # 后续失败的等待时长倍率。即若倍率为2，第一次等1s再试，第二次则2s，第三次则4s
+          max-attempts: 3 #最大重试次数
+          stateless: true # 是否设置为无状态，true即无状态，false为有状态，作用即是否保持原状态，开启事务情况下要改为false，保持事务状态
+  cloud:
+    nacos:
+      server-addr: nacos:8848
+      config:
+        server-addr: nacos:8848
+        file-extension: yaml
+        prefix:
+        group:
+        namespace:
+    sentinel:
+      transport:
+        dashboard: sentinel:8858
+      http-method-specify: true
+      datasource:
+        flow:
+          nacos:
+            server-addr: nacos:8848 # nacos地址
+            username: nacos
+            password: nacos
+            data-id: ${spring.application.name}-degrade-rules
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: degrade
+
+logging:
+  level:
+    com.memo: debug
+
+mybatis:
+  type-aliases-package: com.memo.transaction.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+feign:
+  okhttp:
+    enabled: true
+
+server:
+  port: 8082
