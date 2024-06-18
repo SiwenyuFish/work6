@@ -1,3 +1,7 @@
+# Bonus
+- 使用Nacos
+- 支持负载均衡，实现轮询
+- 集成熔断降级(sentinel)  结合Nacos实现配置持久化
 # 项目结构
 
     │  docker-compose.env.yml     //（mysql，redis，rabbitmq，nacos，sentinel）
